@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./componente-b.component.css']
 })
 export class ComponenteBComponent {
+  titulo = 'Componente B del Módulo B';
 
 }

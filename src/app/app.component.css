@@ -1,0 +1,85 @@
+/* Estilos para los botones de navegación */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+/* Estilos base del botón */
+button {
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Botón para Componente A */
+.btn-modulo-a {
+  background-color: #8321f3 !important; /* Morado */
+}
+
+.btn-modulo-a:hover {
+  background-color: #6a1ac4 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(131, 33, 243, 0.3);
+}
+
+/* Botón para Componente B */
+.btn-modulo-b {
+  background-color: #4CAF50 !important; /* Verde */
+}
+
+.btn-modulo-b:hover {
+  background-color: #388E3C !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Botón para Componente C */
+.btn-modulo-c {
+    background: #FF9800; /* Naranja */
+}
+
+.btn-modulo-c:hover {
+    background: #F57C00; /* Naranja oscuro */
+}
+
+/* Botón para Componente D */
+.btn-modulo-d {
+    background: #F44336; /* Rojo */
+}
+
+.btn-modulo-d:hover {
+    background: #D32F2F; /* Rojo oscuro */
+}
+
+main {
+  padding: 20px;
+  margin: 0 20px;
+}
+
+/* Efecto de pulso al hacer clic */
+button:focus {
+  outline: none;
+  animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}
